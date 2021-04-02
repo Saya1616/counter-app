@@ -3,20 +3,25 @@ import PropTypes from 'prop-types';
 
 
 
-const PrimeraApp = ({saludo}) => {
+const PrimeraApp = ({saludo, subtitulo}) => {
 
   
   
   return (
     <>
       <h1>{saludo}</h1>
-      <p>Mi primera app</p>
+      <p>{subtitulo}</p>
     </>
   );
 };
 
 PrimeraApp.propTypes={
   saludo: PropTypes.string.isRequired,
+
+
+}
+PrimeraApp.defaultProps={
+  subtitulo: 'Soy un subtitulo',
 
 
 }
