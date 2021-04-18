@@ -40,7 +40,7 @@ const handleReset = ()=>{
 
 
 CounterApp.propTypes={
-    value: PropTypes.number.isRequired,
+    value: PropTypes.number,
 
 
 };
